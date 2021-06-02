@@ -1,0 +1,20 @@
+.home-container {
+  width: 80vw;
+  height: 100vh;
+  margin: 50px auto;
+  .pagination {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 70px;
+  }
+  button + button {
+    margin: 20px;
+  }
+
+  .btn-log-out {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}

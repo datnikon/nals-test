@@ -1,0 +1,17 @@
+<div class="home-container">
+    <app-table [users]="users"></app-table>
+
+    <div class="pagination">
+        <button type="button"
+                class="btn btn-primary btn-sm"
+                [disabled]="page === 0"
+                (click)="loadPreviousPage()">Previous</button>
+        <button type="button"
+                class="btn btn-primary btn-sm"
+                (click)="loadNextPage()">Next</button>
+    </div>
+
+    <button type="button"
+            class=" btn btn-secondary btn-rounded btn-fw btn-log-out"
+            (click)="logOut()">Logout</button>
+</div>
